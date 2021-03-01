@@ -1,0 +1,46 @@
+{
+    "name": "ghost-storage-gs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint index.js tests",
+        "test": "jest --verbose",
+        "test:coverage": "jest --coverage"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^7.20.0",
+        "eslint-plugin-ghost": "^2.0.0",
+        "eslint-plugin-jest": "^24.1.5",
+        "express": "^4.17.1",
+        "jest": "^26.6.3",
+        "rimraf": "^3.0.2",
+        "sharp": "^0.27.2"
+    },
+    "dependencies": {
+        "@tryghost/constants": "^0.1.6",
+        "@tryghost/errors": "^0.2.9",
+        "@tryghost/url-utils": "^0.6.26",
+        "fs-extra": "^9.1.0",
+        "ghost-storage-base": "0.0.5",
+        "moment": "^2.29.1"
+    },
+    "jest": {
+        "collectCoverageFrom": [
+            "lib/**/*.js"
+        ],
+        "coverageReporters": [
+            "text",
+            "json-summary"
+        ],
+        "moduleDirectories": [
+            "node_modules",
+            "."
+        ],
+        "testMatch": [
+            "**/tests/**/*.test.js"
+        ]
+    }
+}
