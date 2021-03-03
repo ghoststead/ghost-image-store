@@ -1,3 +1,6 @@
+![GitHub](https://img.shields.io/github/license/ghoststead/ghost-image-store?label=License)
+![Coverage](./badges/coverage.svg)
+
 # ghost-image-store
 Ghost storage adapter that automatically creates a webp version of your uploaded images.
 

@@ -1,21 +1,36 @@
 {
     "name": "ghost-storage-gs",
+    "description": "Ghost storage adapter that automatically creates a webp version of your uploaded images",
     "version": "1.0.0",
-    "description": "",
     "main": "index.js",
     "scripts": {
-        "lint": "eslint index.js tests",
+        "lint": "eslint index.js tests --fix",
         "test": "jest --verbose",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "jest --coverage",
+        "test:badges": "npm run test:coverage  && make-coverage-badge --output-path ./badges/coverage.svg"
     },
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "ghost",
+        "ghoststead",
+        "storage"
+    ],
+    "author": "ghoststead@ghoststead.com",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ghoststead/ghost-image-store.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ghoststead/ghost-image-store/issues"
+    },
+    "homepage": "https://github.com/ghoststead/ghost-image-store",
     "devDependencies": {
         "eslint": "^7.20.0",
         "eslint-plugin-ghost": "^2.0.0",
         "eslint-plugin-jest": "^24.1.5",
         "express": "^4.17.1",
         "jest": "^26.6.3",
+        "make-coverage-badge": "^1.2.0",
         "rimraf": "^3.0.2",
         "sharp": "^0.27.2"
     },
