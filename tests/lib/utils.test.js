@@ -66,11 +66,4 @@ describe('utils', () => {
             expect(utils.loadConfig()).toStrictEqual({});
         });
     });
-
-    describe('changeExtensionToWebP', () => {
-        it('should replace jpeg with webp', () => {
-            expect.assertions(1);
-            expect(utils.changeExtensionToWebP('/foo/bar/baz.jpeg')).toStrictEqual('/foo/bar/baz.webp');
-        });
-    });
 });

@@ -1,1 +1,1 @@
-module.exports = require('./lib/ifs');
+module.exports = require('./lib/store');
