@@ -1,5 +1,5 @@
 {
-    "name": "ghost-storage-gs",
+    "name": "ghost-image-store",
     "description": "Ghost storage adapter that automatically creates a webp version of your uploaded images",
     "version": "1.0.0",
     "main": "index.js",

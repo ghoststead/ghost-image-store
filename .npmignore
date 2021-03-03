@@ -1,6 +1,8 @@
+__mocks__
 /node_modules
 /coverage
 /tests
 /badges
 /.idea
 /.env
+/.eslintrc.js
